@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeControllerPicker" customModule="Scrimmage_Search" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLine1" destination="4Z2-Zg-EhG" id="hfs-3F-x4e"/>
+                <outlet property="coachesButtonOutlet" destination="D9x-Wf-fv3" id="PTR-Uy-zq6"/>
+                <outlet property="gamesButtonOutlet" destination="Ib2-T9-miU" id="mTj-lC-ohI"/>
+                <outlet property="officialsButtonOutlet" destination="Qui-H7-m8u" id="j4J-IK-drH"/>
+                <outlet property="playersButtonOutlet" destination="6ew-Aa-BOE" id="D3p-Bh-Po5"/>
+                <outlet property="teamsButtonOutlet" destination="oeF-TH-OYF" id="gG3-ys-Q54"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Tqm-mP-bCl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I AM LOOKING FOR..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-zd-xq7">
+                    <rect key="frame" x="20" y="74" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wku-8H-L7X">
+                    <rect key="frame" x="369" y="72" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="44U-wM-qVO"/>
+                        <constraint firstAttribute="height" constant="25" id="aOi-70-f86"/>
+                    </constraints>
+                    <state key="normal" image="iks"/>
+                    <connections>
+                        <action selector="closeButtonClicked:" destination="-1" eventType="touchUpInside" id="q5y-hq-W6E"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Z2-Zg-EhG">
+                    <rect key="frame" x="20" y="124.5" width="394" height="1.5"/>
+                    <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1.5" id="pIM-zK-gX3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeF-TH-OYF">
+                    <rect key="frame" x="20" y="146" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="J7B-Dd-v61"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="TEAMS">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="teamsButtonClicked:" destination="-1" eventType="touchUpInside" id="E1F-K4-1dA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-H7-m8u">
+                    <rect key="frame" x="20" y="226" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5or-Tg-vfr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="OFFICIALS">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="officialsButtonClicked:" destination="-1" eventType="touchUpInside" id="dgr-Kl-8yA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9x-Wf-fv3">
+                    <rect key="frame" x="20" y="306" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="nmN-91-Hfi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="COACHES">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="coachesButtonClicked:" destination="-1" eventType="touchUpInside" id="3wj-Pp-JTa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ew-Aa-BOE">
+                    <rect key="frame" x="20" y="386" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="dit-R8-iWI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="PLAYERS">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="playersButtonClicked:" destination="-1" eventType="touchUpInside" id="MQa-Et-VI1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib2-T9-miU">
+                    <rect key="frame" x="20" y="466" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="OGP-o3-Sd4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="GAMES">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="28"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="gamesButtonClicked:" destination="-1" eventType="touchUpInside" id="VjR-KQ-KBR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4Z2-Zg-EhG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="30v-B6-gzz"/>
+                <constraint firstItem="Ib2-T9-miU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="4lG-xq-eEI"/>
+                <constraint firstItem="D9x-Wf-fv3" firstAttribute="top" secondItem="Qui-H7-m8u" secondAttribute="bottom" constant="20" id="5bX-du-6fp"/>
+                <constraint firstItem="6ew-Aa-BOE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Cim-B7-D7x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wku-8H-L7X" secondAttribute="trailing" constant="20" id="EAJ-eQ-u7p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Z2-Zg-EhG" secondAttribute="trailing" id="Ec7-R7-PZs"/>
+                <constraint firstItem="Wku-8H-L7X" firstAttribute="centerY" secondItem="jYz-zd-xq7" secondAttribute="centerY" id="FyK-F0-U01"/>
+                <constraint firstItem="Qui-H7-m8u" firstAttribute="top" secondItem="oeF-TH-OYF" secondAttribute="bottom" constant="20" id="Hmw-Bn-Pqp"/>
+                <constraint firstItem="4Z2-Zg-EhG" firstAttribute="top" secondItem="jYz-zd-xq7" secondAttribute="bottom" constant="30" id="Jhu-dZ-W3W"/>
+                <constraint firstItem="oeF-TH-OYF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="M9W-8K-kb3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oeF-TH-OYF" secondAttribute="trailing" constant="20" id="PBS-20-vct"/>
+                <constraint firstItem="jYz-zd-xq7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="VSg-h1-RRz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jYz-zd-xq7" secondAttribute="trailing" constant="20" id="aXM-Gi-18f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="D9x-Wf-fv3" secondAttribute="trailing" constant="20" id="dzB-Y8-oQG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6ew-Aa-BOE" secondAttribute="trailing" constant="20" id="f1e-oH-hGE"/>
+                <constraint firstItem="oeF-TH-OYF" firstAttribute="top" secondItem="4Z2-Zg-EhG" secondAttribute="bottom" constant="20" id="hBB-g9-pBk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qui-H7-m8u" secondAttribute="trailing" constant="20" id="hQp-x9-llT"/>
+                <constraint firstItem="Qui-H7-m8u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="j4h-c7-gch"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ib2-T9-miU" secondAttribute="trailing" constant="20" id="mVQ-DD-7pI"/>
+                <constraint firstItem="D9x-Wf-fv3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ojv-Vd-Vkd"/>
+                <constraint firstItem="Ib2-T9-miU" firstAttribute="top" secondItem="6ew-Aa-BOE" secondAttribute="bottom" constant="20" id="veP-LC-FZw"/>
+                <constraint firstItem="6ew-Aa-BOE" firstAttribute="top" secondItem="D9x-Wf-fv3" secondAttribute="bottom" constant="20" id="whA-c2-LG6"/>
+                <constraint firstItem="jYz-zd-xq7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xha-cc-ZqP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iks" width="256" height="256"/>
+    </resources>
+</document>
